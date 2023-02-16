@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		
+		
+		
+		<!--Название Сайта-->
+		<title>Наша шклольная жизнь</title>
+		<!--Иконка сайта-->
+		<link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+		<link rel="manifest" href="icon/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+	
+<style>
+
+ul {
+  list-style: none; 
+  margin: 0; 
+  padding-left: 0; 
+  margin-top:25px; 
+  background:#11647d; 
+  height: 50px; 
+}
+.AS {
+  text-decoration: none; 
+  background:#1889ab; 
+  color:#fff; 
+  padding:0px 15px; 
+  font-family: arial; 
+  line-height:50px; 
+  display: block; 
+  border-right: 1px solid #11647d; 
+  -moz-transition: all 0.3s 0.01s ease; 
+  -o-transition: all 0.3s 0.01s ease;
+  -webkit-transition: all 0.3s 0.01s ease;
+
+}
+.AS:hover {
+  background:#D43737;
+}
+li {
+  float:left; 
+  position:relative; 
+}
+     
+    
+    li > ul {
+        position:absolute;
+        top:25px;
+        display:none;   
+    }
+     
+    
+    li:hover > ul {
+        display:block; 
+        width:250px;    
+    }
+   li:hover > ul > li {
+        float:none; 
+    }
+
+</style>
+	
+	<style>
+	
+	.L1{
+	width: 99,9%; 
+	height: 172px;
+	border:1px solid;
+	margin:auto;
+	transform: translate(0em, -4em);
+	}
+	</style>
+	<style>
+	
+	.A1{
+	transform: translate(0em, 13em);
+	position:relative;
+	z-index:3;
+	}
+	
+	</style>
+	<style>
+      .wrapper {
+        width: 99,9%;
+        height: 302px;
+        border: 1px solid #000;
+      transform: translate(0em, -20em);
+	  }
+      .exmpl {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .exmpl img {
+        height: 100%;
+        width: 100%;
+	  }
+    </style>
+	<style>
+	
+	.L2{
+	
+	border: 0px solid #000;
+	overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+	width: 99,9%;
+        height: 100px;
+	font-family:segoe print;
+	transform: translate(0em, -20em);
+	text-shadow: 1px 1px 1px #000;
+		color:#fff;
+		font-size:150%;
+	}
+	
+	</style>
+	<style>
+	.L3{
+	z-index:1;
+	background:#cccccc;
+	margin:auto;
+	width: 99.8%;
+	height: 707px;
+	border: 1px solid #000;
+	transform: translate(0em, -23.5em);
+	position:relative;
+	}
+	
+	</style>
+	<style>
+	.L4{
+	position: absolute;
+	border: 0px solid #000;
+	width: 59%;
+	height: 700px;
+	transform: translate(0em, -67.40em);
+	margin:auto;
+	z-index:2;
+	}
+	</style>
+	
+	
+	
+	
+	
+	
+<style>
+	
+	.section-g {
+		transform: translate(0px, 0px);
+		width:99.9%;
+		height: 600px;
+		background-color: #000;
+		
+		
+	}
+	.content-g {
+		width: 1280px/1366px * 100%;
+		max-width: 1366px;
+		margin: 0 auto;
+	}
+	.slider{
+		width: 90%;
+		height: 500px;
+		overflow: hidden;    
+	}
+	.middle{
+		position: absolute;
+		top: -32.5%;
+		left: 50%;
+		transform: translate(-50%, 50%);
+	}
+	.navigation{
+		position: absolute;
+		bottom: 16px;
+		left: 50%;
+		transform: translateX(-50%);
+		display: flex;
+	}
+	.bar{
+		height: 8px;
+		width: 30px;
+		margin: 6px;
+		cursor: pointer;
+		background-color: #000000;
+		opacity: .5;
+		border-radius: 10px;
+		transition: all .4s ease;
+	}
+	.bar:hover{
+		opacity: 1;
+		transform: scale(1.1);
+	}
+	input[name="r"] {
+		position: absolute;
+		visibility: hidden;
+	}
+
+	.slides{
+		width: 500%;
+		height: 100%;
+		display: flex;
+	}
+	.slide{
+		width: 25%;
+		transition: all .6s ease;   
+	}
+	.slide img{
+		width: 100%;
+		height: 100%;
+	}
+
+	#r1:checked ~ .s1 {
+		margin-left: 0;
+	}
+
+	#r2:checked ~ .s1 {
+		margin-left: -25%;
+	}
+
+	#r3:checked ~ .s1 {
+		margin-left: -50%;
+	}
+
+	#r4:checked ~ .s1 {
+		margin-left: -75%;
+	}
+	#r5:checked ~ .s1 {
+		margin-left: -100%;
+	}
+	
+	</style>
+	
+	<style>
+	.XZ{
+	position:relative;
+	transform: translate(0em, -23.5em);
+	z-index:10;
+	}
+
+	</style>
+	
+	
+	
+	
+		<style>
+	
+	.dws {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
+.buttt {
+ border: 3px solid #218294;
+ font-size: 30px;
+ color: #218294;
+ text-decoration: none;
+ text-transform: uppercase;
+ width: 250px;
+ height: 60px;
+ display: block;
+ text-align: center;
+ line-height: 60px;
+ font-family: Arial, sans-serif;
+ position: relative;
+ transition: .5s;
+ overflow: hidden;
+}
+.buttt::before,
+.buttt::after {
+ position: absolute;
+ content: '';
+ width: 100%;
+ height: 100%;
+ background: #218294;
+ top: 0;
+ left: -100%;
+ opacity: .5;
+ transition: .3s;
+ z-index: -1;
+}
+.buttt::after {
+ opacity: 1;
+ transition-delay: .2s;
+}
+.buttt:hover {
+ color: #fff;
+}
+.buttt:hover::before,
+.buttt:hover::after {
+ left: 0;
+}
+	</style>
+	<style>
+	.DF {
+	transform: translate(0em, 0em);
+	position:absolute;
+	left:350px;
+	bottom:150px;
+	z-index:10;
+	}
+	</style>
+	<style>
+	.PK1{
+	position:absolute;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	position:relative;
+	margin:auto;
+	z-index:4;
+	top: 10px; 
+	left:20px;
+	height:45%;
+	width:400px;
+	}
+	</style>
+	
+	
+	<style>
+	.F {
+		position:absolute;
+		top:0px;
+		left:0px;
+		z-index:-10;
+		transform: translate(0em, -100em);
+	  }
+     
+	
+
+	</style>
+	<style>
+	.L6{
+		position:absolute;
+		right:0px;
+		border: 1px solid #000;
+		background:#fff;
+		height: 705px;
+
+		width: 39.08%;
+		box-shadow: 0 0 5px;
+		z-index:3;
+	}
+	</style>
+	<style>
+	.L7{
+	position:relative;
+	border: 1px solid #000;
+	
+	z-index:5;
+	width: 100%;
+	height: 500px;
+	
+	}
+	</style>
+	<style>
+	.N1{
+	text-align: center;
+	font-family:segoe print;
+	position:absolute;
+	bottom:0px;
+	right:10px;
+	left:30px;
+	z-index:4;
+}
+	</style>
+	<style>
+	.L8{
+	border: 1px solid #000;
+	position:absolute;
+	width: 55%;
+	height: 100%;
+	left:0px;
+	z-index:6;
+	box-shadow: 0 0 20px;
+	background:#fff;
+	font-family:cursive;
+	}
+	</style>
+	<style>
+	.L9{
+	text-align: center;
+	color: red;
+	}
+	</style>
+	
+	
+	<style>
+	.L10 {
+	text-align: center;
+  background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: rainbow 20s ease infinite;
+  animation: rainbow 20s ease infinite;
+  font-size: 25px;
+  line-height: 25px;
+}
+ 
+@-webkit-keyframes rainbow {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+ 
+@keyframes rainbow {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+	</style>
+	<style>
+	.L11{
+	position:absolute;
+	bottom:0px;
+	left:45%;
+	color:#fff;
+	}
+	</style>
+	
+	
+	
+	
+	
+	<script>
+	
+	function writeTextByJS(id, text, speed){
+
+    var ele = document.getElementById(id),
+      txt = text.join("").split("");
+
+  var interval = setInterval(function(){
+
+      if(!txt[0]){
+
+            return clearInterval(interval);
+     };
+
+      ele.innerHTML += txt.shift();
+   }, speed != undefined ? speed : 50);
+
+   return false;
+};
+	
+	
+	</script>
+	
+	
+	
+	
+	<style>
+	.L12{
+	border: 1px solid #000;
+	width: 101%;
+	height: 400px;
+	transform: translate(0em, -20em);
+	background:#000;
+	z-index:5;
+	position:absolute;
+	}
+	</style>
+	
+	
+	<style>
+	.L13{
+	position:absolute;
+	bottom:10%;
+	left:0px;
+
+	z-index:6;
+	}
+	</style>
+	
+	
+	
+	<style>
+	.L15{
+	position:absolute;
+	z-index:6;
+	right:60px;
+	top:100px;
+	width: 50%;
+	box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+            10px 10px 15px rgba(70,70,70,0.12);
+
+	}
+
+	</style>
+	
+	<style>
+	.L16{
+	position:absolute;
+	right:0px;
+	width:60%;
+	height:100%;
+	z-index:6;
+	<!--border: 1px solid #fff;-->
+	}
+	</style>
+	
+	<style>
+	.L17{
+	position:absolute;
+	right:0px;
+	width:33%;
+	height:100%;
+	z-index:6;
+	<!--border: 1px solid #fff;-->
+	}
+	</style>
+	
+	<style>
+	.L18{
+	position:absolute;
+	left:0px;
+	width:66.5%;
+	height:100%;
+	z-index:6;
+	<!--border: 1px solid #fff;-->
+	}
+	</style>
+	
+	
+	<style>
+	.L20{
+	position:absolute;
+	right:0px;
+	width:49.5%;
+	height:100%;
+	z-index:6;
+	<!--border: 1px solid #fff;-->
+	}
+	</style>
+	
+	<style>
+	.L21{
+	position:absolute;
+	z-index:6;
+	right:60px;
+	top:100px;
+	width: 50%;
+	box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+            10px 10px 15px rgba(70,70,70,0.12);
+	}
+
+	</style>
+	
+		<style>
+	.L22{
+	position:absolute;
+	z-index:6;
+	right:23%;
+	left:30%;
+	top:100px;
+	width: 50%;
+	box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+            10px 10px 15px rgba(70,70,70,0.12);
+	}
+
+	</style>
+	
+	<style>
+	.L23{
+	position:absolute;
+	top:55px;
+	
+	left:30%;
+	z-index:6;
+	color:#b3b3b3;
+	font-size:140%
+	}
+	</style>
+	<style>
+	.K1{
+	position:absolute;
+	top:130px;
+	right:23%;
+	left:30%;
+	z-index:6;
+	color:#b3b3b3;
+	font-size:130%
+	}
+	.K1:hover {
+	color: #fff;
+	}
+	</style>
+	<style>
+	a{
+	text-decoration: none;
+	}
+	</style>
+	
+	<style>
+	.K2{
+	position:absolute;
+	top:165px;
+	right:0%;
+	left:30%;
+	z-index:6;
+	color:#b3b3b3;
+	font-size:130%
+	}
+	.K2:hover {
+	color: #fff;
+	}
+	</style>
+	<style>
+	.MNB{
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	color:#fff;
+	z-index:7;
+	}
+	</style>
+	<style>
+	.HG{
+	position:absolute;
+	bottom:30px;
+	right:40px;
+	width: 17%;
+	filter: brightness(55%)
+	}
+	</style>
+	<style>
+	.K3{
+	position:absolute;
+	top:200px;
+	right:23%;
+	left:30%;
+	z-index:6;
+	color:#b3b3b3;
+	font-size:130%
+	}
+	.K3:hover {
+	color: #fff;
+	}
+	</style>
+	
+	</head>
+	<body>
+	
+	<body style='overflow-x:hidden;'>
+	
+<div class="A1">
+	<ul>
+    <li><a class="AS" href="#">Главная</a></li>
+    <li><a class="AS" href="#">Учителя</a>
+        <ul>
+            <li><a class="AS" href="file:№1.html">Глава №1</a></li>
+            <li><a class="AS" href="#">Глава №2</a></li>
+            <li><a class="AS" href="#">Глава №3</a></li>
+			<li><a class="AS" href="#">Глава №4</a></li>
+			<li><a class="AS" href="#">Глава №5</a></li>
+			<li><a class="AS" href="#">Глава №6</a></li>
+			<li><a class="AS" href="#">Глава №7</a></li>
+			<li><a class="AS" href="#">Глава №8</a></li>
+			<li><a class="AS" href="#">Глава №9</a></li>
+			<li><a class="AS" href="#">Глава №10</a></li>
+			<li><a class="AS" href="#">Глава №11</a></li>
+			<li><a class="AS" href="#">Глава №12</a></li>
+			<li><a class="AS" href="#">Глава №13</a></li>
+			<li><a class="AS" href="#">Глава №14</a></li>
+        </ul>
+    </li>  
+    <li><a class="AS" href="#">Ученики</a>
+	<ul>
+            <li><a class="AS" href="#">Глава №1</a></li>
+            <li><a class="AS" href="#">Глава №2</a></li>
+            <li><a class="AS" href="#">Глава №3</a></li>
+			<li><a class="AS" href="#">Глава №4</a></li>
+			<li><a class="AS" href="#">Глава №5</a></li>
+			<li><a class="AS" href="#">Глава №6</a></li>
+			<li><a class="AS" href="#">Глава №7</a></li>
+			<li><a class="AS" href="#">Глава №8</a></li>
+			<li><a class="AS" href="#">Глава №9</a></li>
+			<li><a class="AS" href="#">Глава №10</a></li>
+			<li><a class="AS" href="#">Глава №11</a></li>
+			<li><a class="AS" href="#">Глава №12</a></li>
+			<li><a class="AS" href="#">Глава №13</a></li>
+			<li><a class="AS" href="#">Глава №14</a></li>
+        </ul>
+	</li>
+    <li><a class="AS" href="#">Создатели</a></li>
+</ul>
+	</div>
+	
+	<div class="L1"></div>
+	
+	<div class="wrapper exmpl">
+      <img src="http://photos.wikimapia.org/p/00/02/16/78/81_big.jpg">
+    </div>
+	
+	<div class="L2">
+	<h1  align="center">Школьная жизнь</h1>
+	</div>	
+	
+	<div class="L3">
+	
+		<div class="L8">
+		
+		<big>
+		
+		
+	<!--
+		<pre id="demo"></pre>
+	<script>
+	writeTextByJS(
+  "demo",
+   [
+       "На этом сайте вы можете найти:\n",
+       "• Информацию о учителях\n",
+	   "• Информацию о учениках\n",
+       "• Информацию о жизни в Гимназии №166\n",
+	   "• Информационный итог о нашем классе\n",
+       "• Информация о Пачаеве ХАААХАХХАХАХАХАХАХАХАХ…..\n"
+    ]
+);
+	</script>
+		-->
+		
+		
+		
+			<p>На этом сайте вы можете найти:<br>
+•	Информацию о учителях<br>
+•	Информацию о учениках<br>
+•	Информацию о жизни в Гимназии №166<br>
+•	Информационный итог о нашем классе<br>
+•	Информация о Пачаеве ХАААХАХХАХАХАХАХАХАХАХ…..<br>
+
+<br>Информация о сайте:<br>
+Этот сайт был создан в качестве подарка классу, как альбом( я жмот и платить, за то что в итоге может потеряться, не хочу). <br>
+<br>
+
+<big>
+<div class="L9">
+ВНИМАНИЕ!!!<br>
+Сайт создавался не профессионалом, поэтому на сайте могут быть баги. Баги могут случиться из-за разных расширений экрана.
+</div></big>
+<br>
+
+<div class="L10">
+В сайте встроены пасхалки, в которых вы сможете найти дополнительные инфу)<br>
+</div>
+
+
+
+</big>
+</p>
+</big>
+		</div>
+			
+					<div class="L6">
+						<img class="PK1" src="Dop img/sticker_vk_diggy_012.png" alt=""/>
+			
+						<div id="L7">
+							<div class="N1">
+								<p>
+								<b>
+								<big><big>
+								Привет👋. Этот сайт создавался<br> исключительно в развлекательных<br> целях. 
+								Вся информация на этом сайте не несёт за собой цели оскорбить или обидеть.<br> 
+								Хорошего вам дня.❤
+								</big></big></b>
+								</p>
+							</div>
+						</div>
+					</div>
+				
+			
+	</div>
+	
+	<div class="L4"></div>
+	
+	
+	
+	
+	
+<div class="XZ">
+		<section class="section-g">
+		<div class="L11"><p>
+		ЖМИ ПО КНОПКАМ
+		</p></div>
+		<div class="content-g">
+			<div class="slider middle">
+			<div class="slides">
+				<input type="radio" name="r" id="r1" checked />
+				<input type="radio" name="r" id="r2" />
+				<input type="radio" name="r" id="r3" />
+				<input type="radio" name="r" id="r4" />
+				<input type="radio" name="r" id="r5" />
+				
+				
+				
+				<div class="slide s1"><img src="picture of our class/photo_5206713639929756275_y.jpg" alt="" /></div>
+				
+				
+				
+				
+				
+				<div class="slide"><img src="picture of our class/New_Year's_photo_of_our_class.jpg" alt="" /></div>
+				
+				
+				
+				
+				
+				<div class="slide"><img src="picture of our class/odnoklassnik_Fedya.jpg" alt="" /></div>
+				
+				
+				
+				
+				
+				<div class="slide"><img src="picture of our class/odnoklassnits_Amina_Juliana.jpg" alt="" /></div>
+				
+				
+				
+				
+				
+				
+				<div class="slide"><img src="picture of our class/photo_5206713639929756281_y.jpg" alt="" /></div>
+				
+				
+				
+			</div>
+			<div class="navigation">
+				<label for="r1" class="bar"></label>
+				<label for="r2" class="bar"></label>
+				<label for="r3" class="bar"></label>
+				<label for="r4" class="bar"></label>
+				<label for="r5" class="bar"></label>
+				
+			</div>
+			</div>
+		</div>
+		</section>
+	</div>
+	
+	
+	
+
+	
+	<div class="F M">
+		
+		<img src="Dop img/1627087160_1-kartinkin-com-p-fon-dlya-arkhitekturnogo-plansheta-krasivo-1.jpg" alt="" width="101%" height="3875"/>
+		
+	
+	
+	<div class="L12">
+		
+		<img src="Dop img/imgonline-com-ua-removeJpegArtifacts-hBfChsgOKJ3I.png" alt=""  class="HG"/>
+		
+		<div class="MNB">
+		<p>
+		© 2021–2022 Котельников Иван, Пашаян Александр, Петросян Константин по всем вопросам пишите по адресу lpomosnik66@gmail.com
+		</p>
+		</div>
+		
+		
+		<div class="DF">
+			<div class="dws">
+			<a href="#" class="buttt">Гимназия</a>
+			</div>
+		</div>
+
+ 
+
+		<div class="L16">
+			<div class="L17">
+				<hr class="L15">
+		
+			</div>
+		
+			<div class="L18">
+		
+				<div class="L20">
+					
+					<hr class="L22">
+					
+					<div class="L23">
+						<p>
+						<b>
+						О сайте
+						</b>
+						</p>
+					</div>
+					
+					<a class="K1" href="file:kodl.html">Код сайта</a>
+					<a class="K2" href="file:kodlc.html">Для авторов</a>
+					<a class="K3" href="file:kodlcc.html">Макет</a>
+					
+				</div>
+			</div>
+		</div>
+	
+	<div class="L13">
+	<img src="Drygie/GIMN166-removebg-preview.jpg" alt="" width="60%"/>
+	</div>
+	</div>
+	
+	
+	</div>	
+	
+	
+	
+	
+	
+	
+	
+	</body>
+</html> 
